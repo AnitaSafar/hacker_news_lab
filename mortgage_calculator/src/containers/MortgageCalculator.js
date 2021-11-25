@@ -6,7 +6,9 @@ const MortgageCalculator = () => {
     const [maxValue, setMaxValue] = useState(0);
 
     const calculateMaxValue = (salaries) => {
+        console.log(salaries)
         const value = salaries * 3;
+        console.log(value)
         setMaxValue(value);
     }
 
