@@ -6,11 +6,11 @@ const MortgageCalculator = () => {
 
     const [maxValue, setMaxValue] = useState(0);
 
-    const calculateMaxValue = (salaries, deposit) => {
-        const value = (salaries * 3) + deposit;
+    const calculateMaxValue = (salaries, deposit, commitments) => {
+        const value = (salaries * 3) + deposit - (commitments * 12);
         setMaxValue(value);
     }
-    
+
     return(
         <>
         <h1>Bumblebee mortgage calculator</h1>

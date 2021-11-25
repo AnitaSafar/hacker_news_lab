@@ -59,11 +59,17 @@ h1 {
   gap: 10px;
 }
 
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .box {
   margin-bottom: 15px;
   padding: 5px;
   border-radius: 10px;
+  width: 60%;
+  margin: auto;
 }
 
 .max-value {
@@ -81,6 +87,7 @@ h1 {
   font-size: 16px;
   font-weight: 800;
   margin: auto;
+  margin-top: 20px;
   border: 1px #e3e3e3 solid;
   border-radius: 10px;
   background-color: #003049;
