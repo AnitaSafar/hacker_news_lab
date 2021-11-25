@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CalculatorForm from '../components/CalculatorForm';
 
 const MortgageCalculator = () => {
+
+    const [maxValue, setMaxValue] = useState(0);
+
+    const calculateMaxValue = (salaries) => {
+        const value = salaries * 3;
+        setMaxValue(value);
+    }
+
     return(
+        <>
         <h1>Mortgage calculator</h1>
+        <CalculatorForm calculateMaxValue={calculateMaxValue}/>
+        </>
     );
 };
 
