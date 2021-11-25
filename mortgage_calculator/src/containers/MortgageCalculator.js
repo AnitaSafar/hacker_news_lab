@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import CalculatorForm from '../components/CalculatorForm';
+import Output from '../components/Output';
 
 const MortgageCalculator = () => {
 
     const [maxValue, setMaxValue] = useState(0);
 
-    const calculateMaxValue = (salaries) => {
-        console.log(salaries)
-        const value = salaries * 3;
-        console.log(value)
+    const calculateMaxValue = (salaries, deposit) => {
+        const value = (salaries * 3) + deposit;
         setMaxValue(value);
     }
-
+    
     return(
         <>
-        <h1>Mortgage calculator</h1>
+        <h1>Bumblebee mortgage calculator</h1>
         <CalculatorForm calculateMaxValue={calculateMaxValue}/>
+        <Output maxValue={maxValue}/>
         </>
     );
 };

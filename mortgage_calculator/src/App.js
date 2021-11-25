@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import MortgageCalculator from './containers/MortgageCalculator';
 
 function App() {

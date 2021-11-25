@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Handlee";
+  color: #003049;
+  font-size: 20px;
+  margin: auto;
+  width:90%;
+  text-align: center;
+  background-color: #FCBF49;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +19,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* input {
+  border: none;
+}
+
+.salary-input {
+  border: 1px black solid;
+  width: 100px;
+  padding: 10px;
+  
+} */
+
+h1 {
+  font-weight: 800px;
+  font-size: 50px;
+}
+
+
+
+
+.container {
+  background-color: #EAE2B7;
+  border: 1px #e3e3e3 solid;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.box {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.max-value {
+  font-size: 150px;
+  
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.submit-button {
+  width: 100px;
+  font-family: "Handlee";
+  font-size: 16px;
+  font-weight: 800;
+  margin: auto;
+  border: 1px #e3e3e3 solid;
+  border-radius: 10px;
+  background-color: #003049;
+  color: white;
+  padding: 5px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  color: #f76b07;
+
+}
+
+
